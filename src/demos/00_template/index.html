@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React - Template</title>
+    <script src="../../js/react.min.js"></script>
+    <script src="../../js/react-dom.min.js"></script>
+    <script src="../../js/browser.min.js"></script>
+</head>
+<body>
+    <!--
+    <div id="example"></div>
+    <script type="text/babel">
+
+        var Angana = React.createClass({
+        render: function(){
+            return (<div>
+                    <h2>This is a heading-2</h2>
+                    <p>This is a paragraph</p>
+                    </div>);
+    }
+    });
+        ReactDOM.render(<div><Angana />
+        <Angana />
+    <Angana /></div>, document.getElementById('example'));
+    </script>
+    -->
+    
+    <!--Props-->
+    
+<div id="app"></div>
+    <script type="text/babel">
+
+        var Movie = React.createClass({
+        render: function(){
+            return (<div>
+                    <h2>{this.props.title}</h2>
+                    <p>{this.props.genre}</p>
+                    </div>);
+    }
+    });
+        ReactDOM.render(<div>
+            <Movie title="Avatar" genre="Action"/>
+             <Movie title="The Notebook" genre="Romance"/>
+              <Movie title="Twilight" genre="Supernatural Romance"/>
+        </div>, document.getElementById('app'));
+    </script>
+
+
+</body>
+</html>
